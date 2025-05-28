@@ -1,0 +1,11 @@
+
+str1 = input("Enter first string: ")
+str2 = input("Enter second string: ")
+
+result = str1 + str2  # Concatenate without space
+print("Concatenated without space:", result)
+
+result_with_space = str1 + " " + str2  # Concatenate with space
+print("Concatenated with space:", result_with_space)
+
+
