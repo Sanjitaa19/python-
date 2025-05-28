@@ -1,0 +1,17 @@
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+
+vowels = "aeiouAEIOU"
+max_vowels = 0
+word_with_most_vowels = ""
+
+for word in words:
+    count_vowels = 0
+    for char in word:
+        if char in vowels:
+            count_vowels += 1
+    if count_vowels > max_vowels:
+        max_vowels = count_vowels
+        word_with_most_vowels = word
+
+print("Word with most vowels:", word_with_most_vowels)
