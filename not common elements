@@ -1,0 +1,14 @@
+list1 = list(map(int, input("Enter first list: ").split()))
+list2 = list(map(int, input("Enter second list: ").split()))
+
+not_common = []
+
+for i in list1:
+    if i not in list2 and i not in not_common:
+        not_common.append(i)
+
+for j in list2:
+    if j not in list1 and j not in not_common:
+        not_common.append(j)
+
+print("Elements not common in both lists:", not_common)
