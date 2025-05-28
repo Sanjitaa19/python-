@@ -1,6 +1,11 @@
 def simple_interest(principal, rate, time):
     return (principal * rate * time) / 100
 
-# Example usage
-print(simple_interest(1000, 5, 2)) 
-print(simple_interest(2500, 4, 3)) 
+# Taking user input
+P = float(input("Enter the principal amount: "))
+R = float(input("Enter the rate of interest (%): "))
+T = float(input("Enter the time (in years): "))
+
+# Calculating and printing simple interest
+SI = simple_interest(P, R, T)
+print("Simple Interest is:", SI)
