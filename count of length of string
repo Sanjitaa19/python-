@@ -1,0 +1,7 @@
+text = "Hello, World!"
+count = 0
+
+for char in text:  # Loop through each character in the string
+    count += 1  # Increase count for every character
+
+print(count)  
