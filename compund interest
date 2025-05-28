@@ -1,0 +1,14 @@
+# Input values
+P = float(input("Enter the principal amount: "))
+R = float(input("Enter the annual interest rate (in %): "))
+T = float(input("Enter the time (in years): "))
+
+# Calculate total amount (A)
+A = P * (1 + R / 100) ** T
+
+# Calculate compound interest
+CI = A - P
+
+# Output the results
+print("Compound Interest is:", CI)
+print("Total Amount after interest is:", A)
