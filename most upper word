@@ -1,0 +1,16 @@
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+
+max_upper = 0
+word_with_most_upper = ""
+
+for word in words:
+    count_upper = 0
+    for char in word:
+        if char.isupper():
+            count_upper += 1
+    if count_upper > max_upper:
+        max_upper = count_upper
+        word_with_most_upper = word
+
+print("Word with most uppercase letters:", word_with_most_upper)
