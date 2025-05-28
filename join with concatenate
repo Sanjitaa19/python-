@@ -1,0 +1,4 @@
+str1 = "WsCube"
+str2 = "Tech"
+result = " ".join([str1, str2])  # join() merges strings using a separator
+print(result)
