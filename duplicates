@@ -1,0 +1,4 @@
+lst = input("Enter list elements separated by space (may have duplicates): ").split()
+
+unique = list(set(lst))
+print("List without duplicates:", unique)
