@@ -1,0 +1,4 @@
+def remove_first_occurrence(lst, element):
+    if element in lst:
+        lst.remove(element)
+    return lst
