@@ -1,0 +1,4 @@
+str1 = "WsCube"
+str2 = "Tech"
+result = f"{str1} {str2}"  # f-string allows inserting variables inside strings
+print(result)
