@@ -1,0 +1,8 @@
+def cat_hat(str):
+    cat_count = str.count("cat")
+    hat_count = str.count("hat")
+    
+    if cat_count == hat_count:
+        return True
+    else:
+        return False
