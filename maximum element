@@ -1,0 +1,6 @@
+s = input("Enter a string: ")  # User inputs: programming
+
+max_char = max(set(s), key=s.count)
+
+print("Maximum frequency character:", max_char)
+print("Frequency:", s.count(max_char))
