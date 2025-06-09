@@ -1,0 +1,17 @@
+def has_subarray_with_product(arr, k):
+    n = len(arr)
+    
+    # Loop over all possible starting points of subarrays
+    for start in range(n):
+        product = 1  # Start with product=1 for new subarray
+        
+        # Loop over all possible ending points of subarrays starting at 'start'
+        for end in range(start, n):
+            product *= arr[end]  # Multiply product by current element
+            
+            # If the product matches k, return True immediately
+            if product == k:
+                return True
+    
+    # If no such subarray is found, return False
+    return False
